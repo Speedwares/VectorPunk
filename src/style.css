@@ -304,8 +304,8 @@ body {
 .section-2 .punks-container .punk-2 img:hover,
 .section-2 .punks-container .punk-3 img:hover,
 .section-2 .punks-container .punk-4 img:hover {
-  -webkit-box-shadow: 6px 6px 12px #0f117aa4;
-          box-shadow: 6px 6px 12px #0f117aa4;
+  -webkit-box-shadow: 0px 12px 16px #0f117aa4;
+          box-shadow: 0px 12px 16px #0f117aa4;
   -webkit-transform: translateY(-0.5vw);
           transform: translateY(-0.5vw);
 }
@@ -333,7 +333,7 @@ body {
   font-size: 6vw;
   padding: 3% 12%;
   color: white;
-  border-radius: 30px;
+  border-radius: 50px;
   position: relative;
   top: 7%;
   left: 25%;
@@ -350,8 +350,6 @@ body {
 .section-4 .slide-3 a:hover {
   color: #0f117aa4;
   background-color: white;
-  -webkit-transform: translateY(-5vw);
-          transform: translateY(-5vw);
 }
 
 .section-4 .cash {
@@ -419,6 +417,7 @@ body {
 .faq {
   text-align: center;
   margin-top: 30%;
+  height: 20vw;
 }
 
 .faq h1 {
