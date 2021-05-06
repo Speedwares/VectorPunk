@@ -75,3 +75,15 @@ function ScrollAnime() {
     ease: 'elastic.out',
   });
 }
+
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: '2.3',
+  slidesToScroll: 'auto',
+  draggable: true,
+  dots: '#dots',
+  arrows: {
+    prev: '.glider-prev',
+
+    next: '.glider-next',
+  },
+});
