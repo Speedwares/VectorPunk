@@ -600,9 +600,25 @@ body {
   .section-2 .punks-container .punk-3 span,
   .section-2 .punks-container .punk-4 span,
   .section-2 .punks-container .punk-5 span {
+    margin-top: 3%;
     display: block;
     font-size: 1.5vw;
     text-align: center;
+  }
+  .section-2 .punks-container .punk-1 span:nth-of-type(1),
+  .section-2 .punks-container .punk-2 span:nth-of-type(1),
+  .section-2 .punks-container .punk-3 span:nth-of-type(1),
+  .section-2 .punks-container .punk-4 span:nth-of-type(1),
+  .section-2 .punks-container .punk-5 span:nth-of-type(1) {
+    color: #0f117a;
+  }
+  .section-2 .punks-container .punk-1 span:nth-of-type(2),
+  .section-2 .punks-container .punk-2 span:nth-of-type(2),
+  .section-2 .punks-container .punk-3 span:nth-of-type(2),
+  .section-2 .punks-container .punk-4 span:nth-of-type(2),
+  .section-2 .punks-container .punk-5 span:nth-of-type(2) {
+    position: relative;
+    left: 0;
   }
   .section-2 .punks-container .special {
     background-color: #0f117a;
