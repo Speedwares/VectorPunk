@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Zen+Dots&display=swap');
+
+$btn-color: #0f117a;
+$fc-w: white;
+$header: 8vw;
+$header-2: 2.5vw;
+$content: 5vw;
+$content-2: 1.5vw;
+$line-h: 3.5vw;
+
+body {
+  background-color: #000000;
+  font-family: 'Fredoka One', cursive;
+  overflow-x: hidden;
+}
+
+.my-container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.punk {
+  .intro {
+    padding-left: 3%;
+    padding-right: 3%;
+    position: relative;
+    margin-top: 20%;
+
+    img {
+      width: 80vw;
+      height: 80vw;
+      object-fit: cover;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: translate(2vw, 2vw);
+      }
+    }
+    .border-bg {
+      width: 80vw;
+      height: 80vw;
+      position: absolute;
+      border: 5px solid $btn-color;
+      top: 4vw;
+      left: 6vw;
+      z-index: -1;
+      box-shadow: 6px 6px 12px #0f117aa4;
+    }
+  }
+  .content {
+    margin-top: 15%;
+    h1 {
+      font-size: $header;
+      margin-bottom: 5%;
+      color: $btn-color;
+    }
+    h3 {
+      font-size: $content;
+      line-height: 8vw;
+      text-align: justify;
+      word-spacing: -10px;
+      color: white;
+    }
+    a {
+      background-color: $btn-color;
+      text-decoration: none;
+      font-size: 6vw;
+      padding: 3% 12%;
+      color: white;
+      border-radius: 50px;
+      position: relative;
+      top: 7%;
+      left: 25%;
+      transform: translate(-25%, -7%);
+
+      box-shadow: 6px 6px 15px #0f117aa4;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: $btn-color;
+        background-color: white;
+        i {
+          color: $btn-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .my-container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .punk {
+    .intro {
+      margin-top: 5%;
+
+      img {
+        width: 40vw;
+        height: 40vw;
+      }
+      .border-bg {
+        width: 40vw;
+        height: 40vw;
+        top: 2vw;
+        left: 4.5vw;
+      }
+    }
+    .content {
+      margin-top: 5%;
+
+      h1 {
+        font-size: $header-2;
+        text-align: center;
+        margin-bottom: 15%;
+      }
+      h3 {
+        font-size: $content-2;
+        line-height: $line-h;
+        text-align: center;
+        word-spacing: normal;
+      }
+      a {
+        font-size: 2.5vw;
+        padding: 1.5% 13%;
+      }
+    }
+  }
+}
