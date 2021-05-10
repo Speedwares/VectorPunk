@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Zen+Dots&display=swap");
+body {
+  background-color: #000000;
+  font-family: 'Fredoka One', cursive;
+  overflow-x: hidden;
+}
+
+.my-container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.punk .intro {
+  padding-left: 3%;
+  padding-right: 3%;
+  position: relative;
+  margin-top: 20%;
+}
+
+.punk .intro img {
+  width: 80vw;
+  height: 80vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.punk .intro img:hover {
+  -webkit-transform: translate(2vw, 2vw);
+          transform: translate(2vw, 2vw);
+}
+
+.punk .intro .border-bg {
+  width: 80vw;
+  height: 80vw;
+  position: absolute;
+  border: 5px solid #0f117a;
+  top: 4vw;
+  left: 6vw;
+  z-index: -1;
+  -webkit-box-shadow: 6px 6px 12px #0f117aa4;
+          box-shadow: 6px 6px 12px #0f117aa4;
+}
+
+.punk .content {
+  margin-top: 15%;
+}
+
+.punk .content h1 {
+  font-size: 8vw;
+  margin-bottom: 5%;
+  color: #0f117a;
+}
+
+.punk .content h3 {
+  font-size: 5vw;
+  line-height: 8vw;
+  text-align: justify;
+  word-spacing: -10px;
+  color: white;
+}
+
+.punk .content a {
+  background-color: #0f117a;
+  text-decoration: none;
+  font-size: 6vw;
+  padding: 3% 12%;
+  color: white;
+  border-radius: 50px;
+  position: relative;
+  top: 7%;
+  left: 25%;
+  -webkit-transform: translate(-25%, -7%);
+          transform: translate(-25%, -7%);
+  -webkit-box-shadow: 6px 6px 15px #0f117aa4;
+          box-shadow: 6px 6px 15px #0f117aa4;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.punk .content a:hover {
+  color: #0f117a;
+  background-color: white;
+}
+
+.punk .content a:hover i {
+  color: #0f117a;
+}
+
+@media only screen and (min-width: 768px) {
+  .my-container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .punk .intro {
+    margin-top: 5%;
+  }
+  .punk .intro img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .punk .intro .border-bg {
+    width: 40vw;
+    height: 40vw;
+    top: 2vw;
+    left: 4.5vw;
+  }
+  .punk .content {
+    margin-top: 5%;
+  }
+  .punk .content h1 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+  .punk .content h3 {
+    font-size: 1.5vw;
+    line-height: 3.5vw;
+    text-align: center;
+    word-spacing: normal;
+  }
+  .punk .content a {
+    font-size: 2.5vw;
+    padding: 1.5% 13%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

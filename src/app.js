@@ -20,7 +20,7 @@ function ScrollAnime() {
   let tl2 = gsap.timeline({
     scrollTrigger: {
       trigger: '.section-4 .slide-1 ',
-      start: '+=5',
+      start: '-=500',
     },
   });
   let tl3 = gsap.timeline({
@@ -37,8 +37,7 @@ function ScrollAnime() {
   });
   let tl5 = gsap.timeline({
     scrollTrigger: {
-      trigger: '.cash ',
-      start: '-=500',
+      trigger: '.faq-sec ',
     },
   });
 
@@ -68,10 +67,22 @@ function ScrollAnime() {
     '-=1'
   );
 
-  tl5.from('.cash, .faq', {
+  tl5.from('.faq-sec', {
     y: 200,
     opacity: 0,
     duration: 2,
     ease: 'elastic.out',
   });
 }
+
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: '2.3',
+  slidesToScroll: 'auto',
+  draggable: true,
+  dots: '#dots',
+  arrows: {
+    prev: '.glider-prev',
+
+    next: '.glider-next',
+  },
+});
